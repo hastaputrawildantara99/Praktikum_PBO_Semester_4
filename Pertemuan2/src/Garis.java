@@ -5,68 +5,68 @@
 
 public class Garis {
     // Atribut
-    Titik titikAwal;
-    Titik titikAkhir;
-    static int counterGaris = 0;
+    private Titik titikAwal;
+    private Titik titikAkhir;
+    private static int counterGaris = 0;
 
     // Method
-    Garis() {
+    public Garis() {
         titikAwal = new Titik(0, 0);
         titikAkhir = new Titik(1, 1);
         counterGaris++;
     }
 
-    Garis(Titik t1, Titik t2) {
+    public Garis(Titik t1, Titik t2) {
         titikAwal = t1;
         titikAkhir = t2;
         counterGaris++;
     }
 
-    Titik getTitikAwal() {
+    public Titik getTitikAwal() {
         return titikAwal;
     }
 
-    Titik getTitikAkhir() {
+    public Titik getTitikAkhir() {
         return titikAkhir;
     }
 
-    void setTitikAwal(Titik t1) {
+    public void setTitikAwal(Titik t1) {
         titikAwal = t1;
     }
 
-    void setTitikAkhir(Titik t2) {
+    public void setTitikAkhir(Titik t2) {
         titikAkhir = t2;
     }
 
-    static int getCounterGaris() {
+    public static int getCounterGaris() {
         return counterGaris;
     }
 
-    double PanjangGaris() {
+    public double PanjangGaris() {
         return Math.sqrt(Math.pow(titikAkhir.getAbsis() - titikAwal.getAbsis(), 2)
                 + Math.pow(titikAkhir.getOrdinat() - titikAwal.getOrdinat(), 2));
     }
 
-    double GradienGaris() {
+    public double GradienGaris() {
         return (titikAkhir.getOrdinat() - titikAwal.getOrdinat()) / (titikAkhir.getAbsis() - titikAwal.getAbsis());
     }
 
-    Titik getTitikTengah() {
+    public Titik getTitikTengah() {
         double absis = (titikAwal.getAbsis() + titikAkhir.getAbsis()) / 2;
         double ordinat = (titikAwal.getOrdinat() + titikAkhir.getOrdinat()) / 2;
         return new Titik(absis, ordinat);
     }
 
-    boolean isSejajar(Garis g) {
+    public boolean isSejajar(Garis g) {
         return this.GradienGaris() == g.GradienGaris();
     }
 
-    void printGaris() {
+    public void printGaris() {
         System.out.println("Garis (" + titikAwal.getAbsis() + ", " + titikAwal.getOrdinat() + ") -> ("
                 + titikAkhir.getAbsis() + ", " + titikAkhir.getOrdinat() + ")");
     }
 
-    String getPersamaanGaris() {
+    public String getPersamaanGaris() {
         double m = GradienGaris();
         double c = titikAwal.getOrdinat() - m * titikAwal.getAbsis();
         return "y = " + m + "x + " + c;
