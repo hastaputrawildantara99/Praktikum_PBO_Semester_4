@@ -87,9 +87,7 @@ public class Titik {
         return new Titik(absis, -ordinat);
     }
 
-     
-
-    void printTitik(){
+    void printTitik() {
         System.out.println("Titik (" + absis + ", " + ordinat + ")");
     }
 }

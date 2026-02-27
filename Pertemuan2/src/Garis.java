@@ -1,3 +1,8 @@
+// Nama File : Garis.java
+// Deskripsi : berisi atribut dan method dalam class garis 
+// Pembuat   : Hasta Putra Wildantara / 24060124130119
+// Tanggal   : 2/24/2026
+
 public class Garis {
     // Atribut
     Titik titikAwal;

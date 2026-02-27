@@ -1,3 +1,8 @@
+// Nama File : MGaris.java
+// Deskripsi : berisi main function untuk class Garis
+// Pembuat   : Hasta Putra Wildantara / 24060124130119
+// Tanggal   : 2/24/2026
+
 public class MGaris {
     public static void main(String[] args) {
         Garis g1 = new Garis();

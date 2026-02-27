@@ -1,5 +1,5 @@
 // Nama File : Mtitik.java
-// Deskripsi : berisi atribut dan method dalam class titik 
+// Deskripsi : berisi main function untuk class titik 
 // Pembuat   : Hasta Putra Wildantara / 24060124130119
 // Tanggal   : 2/24/2026
 
